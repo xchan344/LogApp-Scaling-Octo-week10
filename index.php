@@ -9,9 +9,12 @@
 		$fname = mysqli_real_escape_string($conn,$_POST['fname']);
 		$address = mysqli_real_escape_string($conn,$_POST['address']);
 
-		$query = "INSERT INTO person(lastname, firstname,address,logdt) VALUES('$lname', '$fname', '$address', now())";
+		$query = "INSERT INTO person(Last_name, First_name,Address,Log_date) VALUES('$lname', '$fname', '$address', now())";
 
 		if(mysqli_query($conn, $query)){
+      echo '<div class="alert alert-success alert-dismissible fade show">
+      <strong>Success!</strong> Your data has been stored successfully.
+      </div>';
       header('Location: '.ROOT_URL.'');
 		} else {
 			echo 'ERROR: '. mysqli_error($conn);
