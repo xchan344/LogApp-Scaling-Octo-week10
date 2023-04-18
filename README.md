@@ -27,7 +27,7 @@ Once logged in, you can view the logs of the people that used the system.
 2. Import the DelaGente-LogApp.sql to your MySQL or Phpmyadmin
 3. On the Log App Scaling Octo folder, open the folder inside it named config, then open the php file named db
 4. On the db make a connection from your database to the Log App using the format HOSTNAME, USERNAME, PASSWORD, DATABASENAME. For example *$db = mysqli_connect("localhost","root","MySQL344","RecordApp");*
-5. Once the connection is stablished, you can now open the run the app
+5. Once the connection is stablished, you can now run the app
 
 - - -
 ## **Author:**
